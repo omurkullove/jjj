@@ -1,31 +1,35 @@
 import { TextField } from "@mui/material";
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { useAuth } from "../AuthContextProvider";
 import "../RestorePassword/RestorePassword.css";
-
-const RestorePassword = () => {
-  const { restorePass } = useAuth();
-
+const SetRestorePassword = () => {
+  const [password, setPassword] = useState("");
+  const [passwordConfirm, setPasswordConfirm] = useState("");
+  const [restoreCode, setRestoreCode] = useState("");
   const [email, setEmail] = useState("");
+  const { setRestore } = useAuth();
 
   const navigate = useNavigate();
 
-  function handleRestore() {
-    if (!email) {
+  function setRestorePassword() {
+    if (!password.trim() || !passwordConfirm.trim()) {
       Swal.fire({
         icon: "warning",
-        title: "Опппсс...",
-        text: `Заполните поля`,
+        title: "Оопс...",
+        text: "Некоторые поля пустые!",
       });
       return;
     }
-
     let formData = new FormData();
-
+    formData.append("new_password", password);
+    formData.append("new_pass_confirm", passwordConfirm);
+    formData.append("code", restoreCode);
     formData.append("email", email);
-    restorePass(formData, navigate);
+    console.log(formData);
+    setRestore(formData, navigate);
+    // naviagte("/login");
   }
 
   return (
@@ -38,24 +42,58 @@ const RestorePassword = () => {
       </div>
       <div className="restore_title_block">
         <h3 style={{ fontSize: "50px" }}>Сброс пароля</h3>
-        <p style={{ marginTop: "40px", fontSize: "20px" }}>
-          Введите <strong>адрес электронной почты,</strong> который вы указали
-          при регистрации. Мы отправим вам код для сброса пароля.
-        </p>
       </div>
       <div className="restore_block_input">
-        <h3 className="restore_input_titile">Ваш адрес электронной почты</h3>
-        <TextField
-          className="restore_inputs"
-          // id="outlined-error-helper-text"
-          placeholder="Введите адрес электронной почты"
-          // helperText={error ? `${error}` : null}
-          type="email"
-          onChange={e => setEmail(e.target.value)}
-        />
+        <div className="restore_block_input">
+          <h3 className="restore_input_titile">Придумайте новый пароль</h3>
+
+          <TextField
+            className="restore_inputs"
+            // id="outlined-error-helper-text"
+            placeholder="Придумайте новый пароль"
+            type="password"
+            onChange={e => setPassword(e.target.value)}
+          />
+        </div>
+
+        <div className="restore_block_input">
+          <h3 className="restore_input_titile">Подтвердите пароль</h3>
+
+          <TextField
+            className="restore_inputs"
+            // id="outlined-error-helper-text"
+            placeholder="Подтвердите пароль"
+            // helperText={error ? `${error}` : null}
+            type="password"
+            onChange={e => setPasswordConfirm(e.target.value)}
+          />
+        </div>
+        <div className="restore_block_input">
+          <h3 className="restore_input_titile">Введите код</h3>
+
+          <TextField
+            className="restore_inputs"
+            // id="outlined-error-helper-text"
+            placeholder="Введите код"
+            // helperText={error ? `${error}` : null}
+            type="password"
+            onChange={e => setRestoreCode(e.target.value)}
+          />
+        </div>
+        <div className="restore_block_input">
+          <h3 className="restore_input_titile">Введите свою почту</h3>
+
+          <TextField
+            className="restore_inputs"
+            // id="outlined-error-helper-text"
+            placeholder="Введите свою почту"
+            type="email"
+            onChange={e => setEmail(e.target.value)}
+          />
+        </div>
       </div>
       <div className="restore_button_block">
-        <button className="restore_button" onClick={handleRestore}>
+        <button className="restore_button" onClick={setRestorePassword}>
           Отправить
         </button>
       </div>
@@ -63,4 +101,4 @@ const RestorePassword = () => {
   );
 };
 
-export default RestorePassword;
+export default SetRestorePassword;

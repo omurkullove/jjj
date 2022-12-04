@@ -19,7 +19,7 @@ const PreviewPage = () => {
         </div>
         <div className="preview_text_block">
           <img
-            src="https://assets.stickpng.com/images/59b5bb466dbe923c39853e00.png"
+            src="https://www.smarthomeassistent.de/wp-content/uploads/2019/11/Spotify_Logo800x500.png"
             className="preview_spotify_icon"
           />
           <h2 className="preview_text">
