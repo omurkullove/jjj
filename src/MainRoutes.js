@@ -5,6 +5,9 @@ import LoginPage from "./Account/LoginPage";
 import PreviewPage from "./PreviewPage/PreviewPage";
 import LogOut from "./logOut/LogOut";
 import RestorePassword from "./Account/RestorePassword/RestorePassword";
+import SetRestorePassword from "./Account/RestorePassword/SetRestorePassword";
+import GetMusic from "./MusicTest/GetMusic";
+import ChangePassword from "./ChangePassword/ChangePassword";
 
 const MainRoutes = () => {
   const ALL_PAGES = [
@@ -19,7 +22,7 @@ const MainRoutes = () => {
       id: 2,
     },
     {
-      path: "/prev-page",
+      path: "/",
       element: <PreviewPage />,
       id: 3,
     },
@@ -32,6 +35,21 @@ const MainRoutes = () => {
       path: "/restore-pass",
       element: <RestorePassword />,
       id: 5,
+    },
+    {
+      path: "/setRestore-pass",
+      element: <SetRestorePassword />,
+      id: 6,
+    },
+    {
+      path: "/getMusic",
+      element: <GetMusic />,
+      id: 7,
+    },
+    {
+      path: "/changePass",
+      element: <ChangePassword />,
+      id: 8,
     },
   ];
 

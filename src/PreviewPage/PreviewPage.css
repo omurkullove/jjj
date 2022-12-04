@@ -66,9 +66,9 @@
   flex-direction: column;
 }
 .preview_spotify_icon {
-  width: 500px;
-  height: 150px;
-  margin-bottom: 50px;
+  width: 350px;
+  height: 200px;
+  margin-bottom: 40px;
 }
 .preview_text {
   color: white;

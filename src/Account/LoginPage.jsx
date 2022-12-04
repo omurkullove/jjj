@@ -104,7 +104,6 @@ const LoginPage = () => {
               className="login_inputs"
               // id="outlined-error-helper-text"
               placeholder="Имя пользователя"
-              helperText="Incorrect entry."
               type="text"
               onChange={e => setUsername(e.target.value)}
             />
