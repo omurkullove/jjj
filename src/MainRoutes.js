@@ -4,10 +4,10 @@ import RegisterPage from "./Account/RegisterPage";
 import LoginPage from "./Account/LoginPage";
 import PreviewPage from "./PreviewPage/PreviewPage";
 import LogOut from "./logOut/LogOut";
-import RestorePassword from "./Account/RestorePassword/RestorePassword";
-import SetRestorePassword from "./Account/RestorePassword/SetRestorePassword";
-import GetMusic from "./MusicTest/GetMusic";
-import ChangePassword from "./ChangePassword/ChangePassword";
+import HomePage from "./Pages/HomePage/HomePage";
+import EditPage from "./Pages/HomePage/EditPage/EditPage";
+import SavedPage from "./Pages/SavedPage/SavedPage";
+import AddMusic from "./Pages/HomePage/AddMusicPage/AddMusic";
 
 const MainRoutes = () => {
   const ALL_PAGES = [
@@ -32,24 +32,24 @@ const MainRoutes = () => {
       id: 4,
     },
     {
-      path: "/restore-pass",
-      element: <RestorePassword />,
+      path: "/home",
+      element: <HomePage />,
       id: 5,
     },
     {
-      path: "/setRestore-pass",
-      element: <SetRestorePassword />,
+      path: "/edit/:id",
+      element: <EditPage />,
       id: 6,
     },
     {
-      path: "/getMusic",
-      element: <GetMusic />,
+      path: "/saved",
+      element: <SavedPage />,
       id: 7,
     },
     {
-      path: "/changePass",
-      element: <ChangePassword />,
-      id: 8,
+      path: "/add",
+      element: <AddMusic />,
+      id: 7,
     },
   ];
 

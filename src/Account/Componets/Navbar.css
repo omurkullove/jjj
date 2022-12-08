@@ -1,0 +1,46 @@
+.navbar {
+  background: transparent !important;
+  border: 5px solid violet;
+}
+.www {
+  color: white !important;
+  font-size: 80% !important;
+  cursor: pointer !important;
+}
+.www:hover {
+  color: violet !important;
+}
+.input_search {
+  width: 12rem;
+  height: 2rem;
+  border-radius: 15px;
+  background: transparent;
+  border: 2px solid violet;
+  color: white;
+}
+.input_search::placeholder {
+  color: white;
+  padding: 10px;
+}
+
+@media (max-width: 390px) {
+  .input_search {
+    width: 7rem;
+  }
+}
+@media (max-width: 416px) {
+  .input_search {
+    width: 8rem;
+  }
+}
+@media (max-width: 373px) {
+  .input_search {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 327px) {
+  .input_search {
+    width: 5rem;
+  }
+}

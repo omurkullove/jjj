@@ -1,0 +1,126 @@
+{
+  "users": [
+    {
+      "username": "aidin",
+      "email": "qwerty@gmail.com",
+      "password": "123",
+      "passwordConfirm": "123",
+      "admin": true,
+      "id": 2
+    },
+    {
+      "username": "dom",
+      "email": "sas@gmail.com",
+      "password": "1",
+      "passwordConfirm": "1",
+      "admin": false,
+      "id": 3
+    },
+    {
+      "username": "Rin",
+      "email": "aki",
+      "password": "1",
+      "passwordConfirm": "1",
+      "admin": false,
+      "id": 4
+    },
+    {
+      "username": "RIn",
+      "email": "aki.gmail.com",
+      "password": "1",
+      "passwordConfirm": "1",
+      "admin": false,
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "name": "In Da Club",
+      "author": "60 cent ",
+      "file": "https://muzzona.kz/upload/files/2019-07/50-cent-in-da-club_(muzzona.kz).mp3",
+      "img": "https://i0.wp.com/olumuse.org/wp-content/uploads/2020/09/unnamed.jpg?fit=512%2C512&ssl=1",
+      "genre": "Rock",
+      "id": 11
+    },
+    {
+      "name": "In Da Club",
+      "author": "50 cent",
+      "file": "https://muzzona.kz/upload/files/2019-07/50-cent-in-da-club_(muzzona.kz).mp3",
+      "img": "https://i0.wp.com/olumuse.org/wp-content/uploads/2020/09/unnamed.jpg?fit=512%2C512&ssl=1",
+      "genre": "Hiphope",
+      "id": 20
+    },
+    {
+      "name": "In Da Club",
+      "author": "50 cent ",
+      "file": "https://muzzona.kz/upload/files/2019-07/50-cent-in-da-club_(muzzona.kz).mp3",
+      "img": "https://i0.wp.com/olumuse.org/wp-content/uploads/2020/09/unnamed.jpg?fit=512%2C512&ssl=1",
+      "genre": "Funk",
+      "id": 19
+    },
+    {
+      "name": "In Da Club",
+      "author": "50 cent",
+      "file": "https://muzzona.kz/upload/files/2019-07/50-cent-in-da-club_(muzzona.kz).mp3",
+      "img": "https://i0.wp.com/olumuse.org/wp-content/uploads/2020/09/unnamed.jpg?fit=512%2C512&ssl=1",
+      "id": 80
+    },
+    {
+      "name": "In Da Club",
+      "author": "Мирбек Атабеков",
+      "file": "https://muzzona.kz/upload/files/2019-07/50-cent-in-da-club_(muzzona.kz).mp3",
+      "img": "https://i0.wp.com/olumuse.org/wp-content/uploads/2020/09/unnamed.jpg?fit=512%2C512&ssl=1",
+      "genre": "Disco",
+      "id": 89
+    },
+    {
+      "name": "50 Cent - In Da Club",
+      "author": "Мирбек Атабеков",
+      "file": "https://muzzona.kz/upload/files/2019-07/50-cent-in-da-club_(muzzona.kz).mp3",
+      "img": "https://i0.wp.com/olumuse.org/wp-content/uploads/2020/09/unnamed.jpg?fit=512%2C512&ssl=1",
+      "id": 67
+    },
+    {
+      "name": "50 Cent - In Da Club",
+      "author": "Мирбек Атабеков",
+      "file": "https://muzzona.kz/upload/files/2019-07/50-cent-in-da-club_(muzzona.kz).mp3",
+      "img": "https://i0.wp.com/olumuse.org/wp-content/uploads/2020/09/unnamed.jpg?fit=512%2C512&ssl=1",
+      "id": 100
+    },
+    {
+      "name": "JONY, Эрика Лундмоена - Силуэт",
+      "author": "JONY, Эрика Лундмоена",
+      "file": "https://muzzona.kz/uploads/files/2022-12/jony-jerika-lundmoena-silujet_(muzzonas.ru).mp3",
+      "img": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f5a34e108782021.5fc5820ec88bf.png",
+      "id": 12
+    },
+    {
+      "name": "awefwe",
+      "author": "weewf",
+      "img": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f5a34e108782021.5fc5820ec88bf.png",
+      "file": "https://muzzona.kz/upload/files/2019-07/50-cent-in-da-club_(muzzona.kz).mp3",
+      "id": 104
+    },
+    {
+      "name": "Task 1",
+      "author": "json parse",
+      "img": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f5a34e108782021.5fc5820ec88bf.png",
+      "file": "https://muzzona.kz/upload/files/2019-07/50-cent-in-da-club_(muzzona.kz).mp3",
+      "id": 105
+    },
+    {
+      "name": "test name",
+      "author": "test author",
+      "img": "https://i.ytimg.com/vi/yY-ND9eXPG0/maxresdefault.jpg",
+      "file": "https://muzzona.kz/upload/files/2019-07/50-cent-in-da-club_(muzzona.kz).mp3",
+      "id": 106
+    },
+    {
+      "name": "sdfg",
+      "author": "sdfg",
+      "img": "https://media.npr.org/assets/img/2020/11/30/islenia-mil_building-a-playlist_life-kit-podcast_lowris_custom-e07f4dd66cc29e9d65eb80d038167a7c4aa04dd8-s1100-c50.jpg",
+      "file": "https://muzzona.kz/upload/files/2022-11/mirbek-atabekov-muras-nurel-remix_(muzzonas.ru).mp3",
+      "id": 107
+    }
+  ]
+}

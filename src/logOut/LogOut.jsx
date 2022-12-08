@@ -36,7 +36,7 @@ const LogOut = () => {
           LOG OUT
         </button>
       ) : null}
-      {currentUser ? (
+      {/* {currentUser ? (
         <button
           style={{ width: "100px", height: "100px" }}
           onClick={() => {
@@ -62,7 +62,7 @@ const LogOut = () => {
           }}>
           Delete
         </button>
-      ) : null}
+      ) : null} */}
     </div>
   );
 };

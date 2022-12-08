@@ -1,41 +1,25 @@
+import axios from "axios";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../PreviewPage/PreviewPage.css";
 
 const PreviewPage = () => {
   const navigate = useNavigate();
-
   return (
-    <div className="preview_body_block">
-      <div className="preview_main_block">
-        <div className="preview_img_blcok">
-          <div className="preview_img_parent_block">
-            <div className="preview_iphone_part"></div>
-            <img
-              src="https://i.scdn.co/image/ab678e040000ed3aed58911aecc6dbc16949f40b"
-              className="preview_img"
-            />
-          </div>
+    <div className="body_block">
+      <div className="main_block">
+        <div className="title_block">
+          <h1 className="title">
+            Здравствуйте , чтобы продолжить, пожалуйста зарегистрируйтесь
+          </h1>
         </div>
-        <div className="preview_text_block">
-          <img
-            src="https://www.smarthomeassistent.de/wp-content/uploads/2019/11/Spotify_Logo800x500.png"
-            className="preview_spotify_icon"
-          />
-          <h2 className="preview_text">
-            Play millions of songs and podcasts, for free.
-          </h2>
-          <div className="preview_button_group">
-            <button
-              class="preview_button"
-              role="button"
-              onClick={() => navigate("/register")}>
-              SIGN UP
+        <div className="main_block_2">
+          <div className="button_block">
+            <button className="buttons" onClick={() => navigate("/register")}>
+              Зарегистрироваться
             </button>
-            <button
-              className="preview_button"
-              onClick={() => navigate("/login")}>
-              LOG IN
+            <button className="buttons" onClick={() => navigate("/login")}>
+              Войти в аккаунт
             </button>
           </div>
         </div>
